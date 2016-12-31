@@ -1,0 +1,145 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* My Project.... */
+h1,h2 {
+  color: #6d9fac;
+  font-size: 22px;
+  text-align: center;
+  margin: 20px 0 10px 0;
+}
+ 
+.card-container {
+  height: 150px;
+  perspective: 600;
+  position: relative;
+  width: 150px;
+}
+
+.card {
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;  
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+.card .side {
+  backface-visibility: hidden;
+  height:  100%;
+  position: absolute;
+  width:  100%;
+}
+.card .back {
+  transform: rotateY(180deg);
+}
+ 
+.store li {
+  height: 200px;
+  width: 200px;
+  overflow: hidden; 
+  margin : 0 0 0 5px;    
+  display: inline;
+}
+
+.store li:first-child {    /* Keep margin to first margin ony..*/
+  margin: 0px 0px 0px  25px;
+}
+
+.store li img {
+  height: 200px;
+  width: auto;
+  border: 3px solid #cc0000;
+}
+
+.store li img:hover {
+  position: relative;
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  transition-delay: 0.2s;
+}
+
+/* Rotating pics 
+  Our CSS code is simple and basically does two things — it absolutely positions
+  all of our rotating items on top of each other in the wrapper DIV and hides the items using CSS display=none.
+*/
+#rotating-item-wrapper {
+    position: relative;	
+    width: 750px;
+    height: 347px;
+}
+
+.rotating-item {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#rotating-item-wrapper img{
+    width:  750px;
+    height: auto;
+	margin: 0px 0px 0px 25px; 
+	border: 3px solid #cc0000;
+}
+/* Define a class rotating wrapper */
+.rotating-item-wrapper {
+    position: relative;	
+    width: 750px;
+    height: 347px;
+	display: block;
+    margin: 0 auto;
+}
+
+.rotating-item-wrapper img{
+    width:  750px;
+    height: auto;
+	margin: 0px 0px 0px 25px; 
+	border: 3px solid #cc0000;
+}
