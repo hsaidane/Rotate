@@ -37,8 +37,9 @@
             }, itemInterval);
         }
     };
- 
-   $(document).ready(InfiniteRotator.init());
+   // original: 
+   //$(document).ready(InfiniteRotator.init());
+   InfiniteRotator.init();
  
 });
 /*
