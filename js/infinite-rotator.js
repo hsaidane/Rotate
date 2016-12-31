@@ -1,3 +1,4 @@
+var $ = jQuery;
  $(window).load(function() { //start after HTML, images have loaded
  
     var InfiniteRotator =
@@ -37,7 +38,7 @@
         }
     };
  
-    InfiniteRotator.init();
+   $(document).ready(InfiniteRotator.init());
  
 });
 /*
