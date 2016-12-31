@@ -1,4 +1,11 @@
 //var $ = jQuery;
+if(typeof jQuery!=='undefined'){
+   console.log('jQuery Loaded');
+}
+else{
+   console.log('not loaded yet');
+}
+ 
  $(window).load(function() { //start after HTML, images have loaded
  
     var InfiniteRotator =
