@@ -113,6 +113,8 @@ h1,h2 {
     position: relative;	
     width: 750px;
     height: 347px;
+	display: block;
+    margin: 0 auto;
 }
 
 .rotating-item {
